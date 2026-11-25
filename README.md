@@ -1,5 +1,7 @@
 # Distributed Transactional Banking System (Java RMI)
 
+[![tests](https://github.com/ZIADAYMAN81/distributed-banking-rmi/actions/workflows/tests.yml/badge.svg)](https://github.com/ZIADAYMAN81/distributed-banking-rmi/actions/workflows/tests.yml)
+
 > Distributed Systems coursework, The British University in Egypt. Author: Ziad Ayman.
 
 A banking system whose accounts are **partitioned across several worker servers**. A coordinator routes each request to the right worker and runs every balance change, including transfers between accounts on different machines, as a **two-phase-commit transaction**, so money is never lost or duplicated. Built with plain Java (no frameworks) using Java RMI.
@@ -60,3 +62,6 @@ The original coursework code was an early skeleton: the account class was missin
 
 ## Tech stack
 Java 17 · Java RMI · java.util.concurrent · Swing
+
+## License
+MIT, see [LICENSE](LICENSE).
